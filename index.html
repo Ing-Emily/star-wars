@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academia Jedi</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="/assets/Vector.svg" alt="Logo Jedi" />
+      <div>
+        <h1 class="titulo"><b>Academia Jedi</b></h1>
+        <p class="subtitulo">¡Que la fuerza te acompañe!</p>
+      </div>
+    </header>
+
+    <section class="formulario">
+      <form>
+        
+      <div class="container-inputs">
+          <label for="nombre">Nombre del aprendiz</label>
+        <input
+        type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Introduce tu nombre aquí"
+          required
+        />
+      </div>
+
+        
+        <label for="raza">Especie</label>
+        <select name="raza" id="raza">
+          <option value="Humano">Humano</option>
+          <option value="Wookiee">Wookiee</option>
+          <option value="Jawa">Jawa</option>
+        </select>
+        <p class="descripcion">Selecciona tu especie</p>
+
+        
+        <label for="edad">Edad</label>
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          placeholder="Introduce tu edad"
+        />
+
+        
+        <label for="planeta">Planeta de origen</label>
+        <input
+          type="text"
+          id="planeta"
+          name="planeta"
+          placeholder="Introduce tu planeta de origen"
+          required
+        />
+
+        
+        <section class="nivel-fuerza">
+          <h2>Nivel de Conexión con la Fuerza</h2>
+
+          <div class="opciones">
+            <label class="opcion">
+              <input type="radio" name="nivel" value="bajo" checked />
+              <span>Bajo</span>
+            </label>
+
+            <label class="opcion">
+              <input type="radio" name="nivel" value="medio" />
+              <span>Medio</span>
+            </label>
+
+            <label class="opcion">
+              <input type="radio" name="nivel" value="alto" />
+              <span>Alto</span>
+            </label>
+          </div>
+          <p class="descripcion">Selecciona tu nivel</p>
+        </section>
+
+        
+        <section class="sables">
+          <h2>Selección de Sables de Luz Preferidos</h2>
+
+          <div class="contenedor-sables">
+            <label class="sable opcion-azul">
+              <input type="checkbox" name="sables" value="azul" />
+              <span class="icono"></span>
+              <span class="texto">Azul</span>
+            </label>
+
+            <label class="sable opcion-verde">
+              <input type="checkbox" name="sables" value="verde" />
+              <span class="icono"></span>
+              <span class="texto">Verde</span>
+            </label>
+
+            <label class="sable opcion-morado">
+              <input type="checkbox" name="sables" value="morado" />
+              <span class="icono"></span>
+              <span class="texto">Morado</span>
+            </label>
+
+            <label class="sable opcion-rojo">
+              <input type="checkbox" name="sables" value="rojo" />
+              <span class="icono"></span>
+              <span class="texto">Rojo</span>
+            </label>
+
+            <label class="sable opcion-doble">
+              <input type="checkbox" name="sables" value="doble" />
+              <span class="icono"></span>
+              <span class="texto">Doble Hoja</span>
+            </label>
+          </div>
+        </section>
+
+        <label for="comentarios">Comentarios adicionales</label>
+        <input
+          type="text"
+          id="comentarios"
+          name="comentarios"
+          placeholder="Escribe tus comentarios aquí..."
+        />
+
+        <button class="boton-enviar">Enviar solicitud al Consejo Jedi</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <h2>Nota</h2>
+      <p>Bienvenido a tu nuevo camino</p>
+    </footer>
+  </body>
 </html>
