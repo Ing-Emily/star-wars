@@ -22,3 +22,6 @@ El objetivo es construir una interfaz lo más fiel posible al prototipo, cuidand
 > - Solo se permite **HTML + CSS puro**  
 > - No se pueden usar frameworks (Bootstrap, Tailwind, etc.)  
 > - No se debe usar JavaScript
+
+# Emily Picon -192653
+# Sharik Jaime -192646
