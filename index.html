@@ -24,47 +24,54 @@
 
     <section class="formulario">
       <form>
+
         
-      <div class="container-inputs">
+        <div class="container-inputs">
           <label for="nombre">Nombre del aprendiz</label>
-        <input
-        type="text"
-          id="nombre"
-          name="nombre"
-          placeholder="Introduce tu nombre aquí"
-          required
-        />
-      </div>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Introduce tu nombre aquí"
+            required
+          />
+        </div>
 
         
-        <label for="raza">Especie</label>
-        <select name="raza" id="raza">
-          <option value="Humano">Humano</option>
-          <option value="Wookiee">Wookiee</option>
-          <option value="Jawa">Jawa</option>
-        </select>
-        <p class="descripcion">Selecciona tu especie</p>
+        <div class="container-inputs">
+          <label for="raza">Especie</label>
+          <select name="raza" id="raza">
+            <option value="Humano">Humano</option>
+            <option value="Wookiee">Wookiee</option>
+            <option value="Jawa">Jawa</option>
+          </select>
+          <p class="descripcion">Selecciona tu especie</p>
+        </div>
 
-        
-        <label for="edad">Edad</label>
-        <input
-          type="number"
-          id="edad"
-          name="edad"
-          placeholder="Introduce tu edad"
-        />
+      
+        <div class="container-inputs">
+          <label for="edad">Edad</label>
+          <input
+            type="number"
+            id="edad"
+            name="edad"
+            placeholder="Introduce tu edad"
+          />
+        </div>
 
-        
-        <label for="planeta">Planeta de origen</label>
-        <input
-          type="text"
-          id="planeta"
-          name="planeta"
-          placeholder="Introduce tu planeta de origen"
-          required
-        />
+        <!-- Planeta -->
+        <div class="container-inputs">
+          <label for="planeta">Planeta de origen</label>
+          <input
+            type="text"
+            id="planeta"
+            name="planeta"
+            placeholder="Introduce tu planeta de origen"
+            required
+          />
+        </div>
 
-        
+        <!-- Nivel de la Fuerza -->
         <section class="nivel-fuerza">
           <h2>Nivel de Conexión con la Fuerza</h2>
 
@@ -84,10 +91,11 @@
               <span>Alto</span>
             </label>
           </div>
+
           <p class="descripcion">Selecciona tu nivel</p>
         </section>
 
-        
+        <!-- Sables -->
         <section class="sables">
           <h2>Selección de Sables de Luz Preferidos</h2>
 
@@ -124,13 +132,16 @@
           </div>
         </section>
 
-        <label for="comentarios">Comentarios adicionales</label>
-        <input
-          type="text"
-          id="comentarios"
-          name="comentarios"
-          placeholder="Escribe tus comentarios aquí..."
-        />
+        <!-- Comentarios -->
+        <div class="container-inputs">
+          <label for="comentarios">Comentarios adicionales</label>
+          <input
+            type="text"
+            id="comentarios"
+            name="comentarios"
+            placeholder="Escribe tus comentarios aquí..."
+          />
+        </div>
 
         <button class="boton-enviar">Enviar solicitud al Consejo Jedi</button>
       </form>
